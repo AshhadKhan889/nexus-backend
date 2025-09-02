@@ -26,5 +26,9 @@ app.use("/api/documents", require("./src/routes/documentRoutes"));
 app.use("/api/payments", require("./src/routes/paymentRoutes"));
 app.use("/api/security", require("./src/routes/securityRoutes"));
 
+app.get("/", (req, res) => {
+  res.send("🚀 Nexus Backend is running! Use /api/* routes.");
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
