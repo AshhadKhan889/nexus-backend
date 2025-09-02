@@ -1,4 +1,4 @@
-const VideoRoom = require("../models/videoRoom");
+const VideoRoom = require("../models/VideoRoom");
 
 // Create video room
 exports.createRoom = async (req, res) => {
